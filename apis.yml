@@ -1,8 +1,25 @@
 aid: pf-changs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pf-changs.png
 name: P.F. Chang's
-description: 'P.F. Chang''s is a company surfaced as a portfolio company of trinity-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'P.F. Chang''s is an American casual-dining restaurant chain specializing in
+  Asian-inspired cuisine, operating restaurants and a Home Menu retail line. It was surfaced
+  as a portfolio company of trinity-ventures and added to the API Evangelist network for
+  enrichment. The enrichment pipeline found no public developer API surface: no developer
+  portal, documentation, OpenAPI, or well-known discovery endpoints are published. The only
+  live host, api.pfchangs.com, returns a default Azure Function App page (an internal
+  app backend, not a public API). This profile captures the company''s public web and
+  domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/pf-changs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Restaurant
+- Dining
+- Food
+- Hospitality
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +46,16 @@ maintainers:
 common:
 - type: Website
   url: https://www.pfchangs.com
+- type: PrivacyPolicy
+  url: https://www.pfchangs.com/privacy-policy
+- type: TermsOfService
+  url: https://www.pfchangs.com/terms-of-use
+- type: Support
+  url: https://www.pfchangs.com/contact-us
+- type: DomainSecurity
+  url: security/pf-changs-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
